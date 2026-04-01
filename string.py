@@ -37,3 +37,9 @@ print('s' in a) # False
 print('l' not in a) # False
 print('j' not in a) # True
 
+'''
+isinstance() function is used to check if variable is instance of specified class.
+In below example, 'str' is class & we are using python's built-in function 'isinstance()' to check if
+variable 'a' is instance of class 'str' or not.
+'''
+print(isinstance(a, str)) # True
