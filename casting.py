@@ -1,6 +1,6 @@
 """
 Casting is used when you want to specify a type on to a variable.
-Casting can be done using constructure functions like below:
+Casting can be done using class constructure like below:
 
 1. int() => to convert data types into integers (whole numbers).
             It works great if you give it a string that looks like a number, such as "42".
