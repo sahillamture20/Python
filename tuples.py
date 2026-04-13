@@ -67,3 +67,49 @@ print("Tuple after:", fruits)
 # Delete tuple completely usin del keyword
 del mytuple
 # print(mytuple) ==> This will given error
+
+'''
+Packing & Unpacking in TUple:
+
+- When we create a tuple, we normally assign values to it. This is called "packing" a tuple.
+- But, in Python, we are also allowed to extract the values back into variables. This is called "unpacking"
+
+Note: The number of variables must match the number of values in the tuple, if not,
+      you must use an asterisk to collect the remaining values as a list.
+- If the number of variables is less than the number of values, you can add an * to the variable name and
+  the values will be assigned to the variable as a list.
+- If the asterisk is added to another variable name than the last, Python will assign values to the variable
+  until the number of values left matches the number of variables left.
+
+Tuple methods
+count()	= Returns the number of times a specified value occurs in a tuple
+index()	= Searches the tuple for a specified value and returns the position of where it was found
+'''
+nuts = ("cashew", "almond", "raisins")
+print(nuts)
+(green, yellow, red) = nuts
+
+print(green)
+print(yellow)
+print(red)
+
+# Using Asterisk*
+colors = ("green", "red", "yellow", "blue", "pink")
+
+(color1, color2, *remaining_colors) = colors
+
+print(color1)
+print(color2)
+print(remaining_colors)
+
+# Join 2 tuples
+x = ("a", "b" , "c")
+y = (1, 2, 3)
+
+z = x + y
+print(z)
+
+# Multiply tuple
+print(z * 2)
+
+# Loop through tuples
